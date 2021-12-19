@@ -12,8 +12,7 @@ using System.Net;
 namespace Ketarin
 {
     /// <summary>
-    /// This class contains a collection of functions
-    /// for reading from the database.
+    /// This class contains a collection of functions for reading from the database.
     /// </summary>
     internal class DbManager
     {
@@ -91,8 +90,7 @@ namespace Ketarin
         }
 
         /// <summary>
-        /// Builds a new proxy object from the settings.
-        /// Returns null if no valid proxy exists.
+        /// Builds a new proxy object from the settings. Returns null if no valid proxy exists.
         /// </summary>
         public static WebProxy Proxy
         {
@@ -158,8 +156,7 @@ namespace Ketarin
         }
 
         /// <summary>
-        /// For all database operations that might be executed at the same
-        /// time within different threads (for example, .Save() for multiple
+        /// For all database operations that might be executed at the same time within different threads (for example, .Save() for multiple
         /// application jobs), we need a "unique" connection.
         /// </summary>
         public static SQLiteConnection NewConnection
@@ -201,9 +198,7 @@ namespace Ketarin
         }
 
         /// <summary>
-        /// Makes sure that a couple of database backups 
-        /// are kept automatically. SQLite is reliable, 
-        /// but better safe than sorry.
+        /// Makes sure that a couple of database backups are kept automatically. SQLite is reliable, but better safe than sorry.
         /// </summary>
         private static void MakeBackups()
         {
@@ -261,6 +256,7 @@ namespace Ketarin
                                         (JobId              INTEGER PRIMARY KEY,
                                          ApplicationName    TEXT,
                                          TargetPath         TEXT,
+                                         CurrentVersion     TEXT,
                                          FixedDownloadUrl   TEXT,
                                          FileHippoId        TEXT,
                                          FileHippoVersion   TEXT,

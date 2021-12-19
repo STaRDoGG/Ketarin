@@ -31,43 +31,36 @@ namespace Ketarin.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridData = new System.Windows.Forms.DataGridView();
-            this.lblMain = new System.Windows.Forms.Label();
             this.bOK = new System.Windows.Forms.Button();
             this.bCancel = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
             this.SuspendLayout();
             // 
             // gridData
             // 
             this.gridData.AllowUserToResizeRows = false;
-            this.gridData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridData.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.gridData.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.gridData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridData.Location = new System.Drawing.Point(12, 25);
+            this.gridData.Location = new System.Drawing.Point(12, 12);
             this.gridData.Name = "gridData";
-            this.gridData.Size = new System.Drawing.Size(381, 216);
+            this.gridData.Size = new System.Drawing.Size(381, 241);
             this.gridData.TabIndex = 1;
-            // 
-            // lblMain
-            // 
-            this.lblMain.AutoSize = true;
-            this.lblMain.Location = new System.Drawing.Point(12, 9);
-            this.lblMain.Name = "lblMain";
-            this.lblMain.Size = new System.Drawing.Size(148, 13);
-            this.lblMain.TabIndex = 0;
-            this.lblMain.Text = "&POST data to send with URL:";
+            this.toolTip1.SetToolTip(this.gridData, "&POST data to send with URL");
             // 
             // bOK
             // 
             this.bOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bOK.Cursor = System.Windows.Forms.Cursors.Default;
             this.bOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bOK.Location = new System.Drawing.Point(237, 259);
+            this.bOK.Location = new System.Drawing.Point(237, 263);
             this.bOK.Name = "bOK";
             this.bOK.Size = new System.Drawing.Size(75, 23);
             this.bOK.TabIndex = 2;
@@ -79,7 +72,7 @@ namespace Ketarin.Forms
             // 
             this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bCancel.Location = new System.Drawing.Point(318, 259);
+            this.bCancel.Location = new System.Drawing.Point(318, 263);
             this.bCancel.Name = "bCancel";
             this.bCancel.Size = new System.Drawing.Size(75, 23);
             this.bCancel.TabIndex = 3;
@@ -93,8 +86,8 @@ namespace Ketarin.Forms
             this.ClientSize = new System.Drawing.Size(405, 294);
             this.Controls.Add(this.bCancel);
             this.Controls.Add(this.bOK);
-            this.Controls.Add(this.lblMain);
             this.Controls.Add(this.gridData);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "PostDataEditor";
@@ -104,15 +97,14 @@ namespace Ketarin.Forms
             this.Text = "Edit POST Data";
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private DataGridView gridData;
-        private Label lblMain;
         private Button bOK;
         private Button bCancel;
+        private ToolTip toolTip1;
     }
 }

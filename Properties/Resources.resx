@@ -112,12 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Symbol Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Symbol Delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +157,23 @@
   <data name="Symbol Information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Symbol Information.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Restart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Restart" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ7SURBVDhPhZFfSFNhGMZ30ZlEjCANVkOGinnhjeLN
+        GNOdrU0tw+ymjTU925rGNmPLC3MI1sVqpB1SLMP9cX/aVDIkzaG0JYF004VdRWhsoyuhVV4sE2zw9r0r
+        Dw4nXfy+8z3P+77P93E+HgD8F6n+KbRaIseK1Q4Zxbjav7CDIRdt04J2x1xBrUAgrdaooK139o7Wufje
+        cHclZ3Gv5uzsu9zGl234e5Oo6GB/wXBb7/R57cBCWjfwEtRGD8g0o6DQjYNt+C1Yh9fgYzKTD1GaA9Sh
+        gHb7jJ4ZikHHzQhIroz8aOyceNTEeC4QVNcGX+122J/nhxUmv2x/hgtosz07Zxha+ql3zoNMO7ZGm/wn
+        DjY19wR/47Dc6DtDvpyP5Bfd7bknvQ9eg5qZSKGOVFfzCa6EXJ5KSCSpW1INhMvK+HHe4X+WX6z3l9MO
+        Ng60YdKBOlJZ6U47nbAbi8HO6BhsNjdDSCC4d2RAHxvfs7lXQG7wilGv1tdvZV0uyLAsfKqqgmRtLSTE
+        4m9HBzyM72n6XwBt9J9FnRCJtralUvhcUQHrFAWbNA2LNTXfMUBpDh5X9YRA2R3McgGX7TPJFksUaNPU
+        JdR+imLXS0ogVVoKGxIJxOvqwMnnj2CA4vqUrMUSARLygQsgg271jTC+7xLqxzwen6WosXB5+ddQQ0PG
+        KRSOG4mXDzAH3qh6wniYiwuQG/0ikpxVdgfIU/kH0SsGqfWRQwB7yf40elyxyeDTERPfGsh+nqAmnCKc
+        JCiJP0v+ER6Adc3+HBeANDLezkbG84sAHIZ/MF7UpOblhpGCAETW5RE2Md5hhcmXpsltZF2T5ERPCj2s
+        FfYD7w+n1l0mS2bRsAAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="CloseSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\CloseSearch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

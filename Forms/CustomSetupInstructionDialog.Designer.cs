@@ -44,15 +44,14 @@ namespace Ketarin.Forms
             // 
             // commandControl
             // 
-            this.commandControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.commandControl.Application = null;
             this.commandControl.IndentButton = 12;
             this.commandControl.Location = new System.Drawing.Point(0, 0);
             this.commandControl.Margin = new System.Windows.Forms.Padding(0);
             this.commandControl.Name = "commandControl";
-            this.commandControl.ReadOnly = false;
             this.commandControl.ShowBorder = false;
             this.commandControl.Size = new System.Drawing.Size(590, 283);
             this.commandControl.TabIndex = 4;
@@ -64,6 +63,7 @@ namespace Ketarin.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 321);
             this.Controls.Add(this.commandControl);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = true;
             this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "CustomSetupInstructionDialog";

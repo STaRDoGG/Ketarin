@@ -22,7 +22,7 @@ namespace Ketarin
         private readonly TextBox searchTextBox = new TextBox();
         private List<ApplicationJob> preSearchList;
         private readonly CheckBox enabledJobsCheckbox = new CheckBox();
-        public const string DefaultEmptyMessage = "No applications have been added yet.";
+        public const string DefaultEmptyMessage = "No apps have been added.";
 
         /// <summary>
         /// Fires when the filter of the ListView has changed.

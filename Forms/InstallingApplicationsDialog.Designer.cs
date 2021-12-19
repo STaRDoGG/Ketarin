@@ -41,8 +41,8 @@ namespace Ketarin.Forms
             this.lbShowHideDetails = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.olvLog = new CDBurnerXP.Controls.ObjectListView();
-            this.colTime = new CDBurnerXP.Controls.OLVColumn();
-            this.colMessage = new CDBurnerXP.Controls.OLVColumn();
+            this.colTime = ((CDBurnerXP.Controls.OLVColumn)(new CDBurnerXP.Controls.OLVColumn()));
+            this.colMessage = ((CDBurnerXP.Controls.OLVColumn)(new CDBurnerXP.Controls.OLVColumn()));
             this.imlListIcons = new System.Windows.Forms.ImageList(this.components);
             this.lblEvents = new System.Windows.Forms.Label();
             this.pnlExpanded = new System.Windows.Forms.Panel();
@@ -54,7 +54,7 @@ namespace Ketarin.Forms
             // 
             this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bCancel.Location = new System.Drawing.Point(313, 193);
+            this.bCancel.Location = new System.Drawing.Point(313, 195);
             this.bCancel.Name = "bCancel";
             this.bCancel.Size = new System.Drawing.Size(75, 23);
             this.bCancel.TabIndex = 5;
@@ -67,16 +67,16 @@ namespace Ketarin.Forms
             this.lblSetupStatus.AutoSize = true;
             this.lblSetupStatus.Location = new System.Drawing.Point(12, 9);
             this.lblSetupStatus.Name = "lblSetupStatus";
-            this.lblSetupStatus.Size = new System.Drawing.Size(96, 13);
+            this.lblSetupStatus.Size = new System.Drawing.Size(110, 13);
             this.lblSetupStatus.TabIndex = 0;
             this.lblSetupStatus.Text = "Installing appliction";
             // 
             // progressBar
             // 
-            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar.Location = new System.Drawing.Point(15, 25);
-            this.progressBar.MarqueeAnimationSpeed = 50;
+            this.progressBar.MarqueeAnimationSpeed = 40;
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(373, 18);
             this.progressBar.TabIndex = 1;
@@ -93,17 +93,17 @@ namespace Ketarin.Forms
             this.lbShowHideDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbShowHideDetails.ImageIndex = 3;
             this.lbShowHideDetails.ImageList = this.imageList;
-            this.lbShowHideDetails.Location = new System.Drawing.Point(14, 193);
+            this.lbShowHideDetails.Location = new System.Drawing.Point(14, 195);
             this.lbShowHideDetails.Name = "lbShowHideDetails";
-            this.lbShowHideDetails.Size = new System.Drawing.Size(94, 23);
+            this.lbShowHideDetails.Size = new System.Drawing.Size(108, 23);
             this.lbShowHideDetails.TabIndex = 4;
-            this.lbShowHideDetails.Text = "        Show details";
+            this.lbShowHideDetails.Text = "       Details";
             this.lbShowHideDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbShowHideDetails.MouseLeave += new System.EventHandler(this.lbDetails_MouseLeave);
             this.lbShowHideDetails.Click += new System.EventHandler(this.lbDetails_Click);
             this.lbShowHideDetails.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbDetails_MouseUp);
-            this.lbShowHideDetails.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lbDetails_MouseUp);
             this.lbShowHideDetails.MouseEnter += new System.EventHandler(this.lbDetails_MouseEnter);
+            this.lbShowHideDetails.MouseLeave += new System.EventHandler(this.lbDetails_MouseLeave);
+            this.lbShowHideDetails.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lbDetails_MouseUp);
             // 
             // imageList
             // 
@@ -123,9 +123,10 @@ namespace Ketarin.Forms
             this.olvLog.AlternateRowBackColor = System.Drawing.Color.Empty;
             this.olvLog.AlwaysGroupByColumn = null;
             this.olvLog.AlwaysGroupBySortOrder = System.Windows.Forms.SortOrder.None;
-            this.olvLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.olvLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.olvLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.olvLog.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colTime,
             this.colMessage});
@@ -151,6 +152,7 @@ namespace Ketarin.Forms
             // 
             this.colTime.AspectName = "Time";
             this.colTime.AspectToStringFormat = "{0:t}";
+            this.colTime.IntendedAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.colTime.Text = "Time";
             this.colTime.Width = 55;
             // 
@@ -158,6 +160,7 @@ namespace Ketarin.Forms
             // 
             this.colMessage.AspectName = "Message";
             this.colMessage.FillsFreeSpace = true;
+            this.colMessage.IntendedAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.colMessage.Text = "Message";
             this.colMessage.Width = 350;
             // 
@@ -197,6 +200,7 @@ namespace Ketarin.Forms
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.lblSetupStatus);
             this.Controls.Add(this.bCancel);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

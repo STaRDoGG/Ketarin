@@ -50,14 +50,15 @@ namespace Ketarin.Forms
             // lblResults
             // 
             this.lblResults.Location = new System.Drawing.Point(12, 43);
+            this.lblResults.Size = new System.Drawing.Size(122, 13);
             // 
             // txtSearchSubject
             // 
-            this.txtSearchSubject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchSubject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchSubject.Location = new System.Drawing.Point(12, 14);
             this.txtSearchSubject.Name = "txtSearchSubject";
-            this.txtSearchSubject.Size = new System.Drawing.Size(209, 20);
+            this.txtSearchSubject.Size = new System.Drawing.Size(209, 22);
             this.txtSearchSubject.TabIndex = 0;
             this.txtSearchSubject.TextChanged += new System.EventHandler(this.txtSearchSubject_TextChanged);
             // 
@@ -91,6 +92,7 @@ namespace Ketarin.Forms
             this.Controls.Add(this.bTop50);
             this.Controls.Add(this.txtSearchSubject);
             this.Controls.Add(this.bSearch);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ImportFromDatabaseDialog";
             this.Text = "Import Application";
             this.Controls.SetChildIndex(this.bCancel, 0);

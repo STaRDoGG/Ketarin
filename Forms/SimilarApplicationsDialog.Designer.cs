@@ -49,19 +49,19 @@ namespace Ketarin.Forms
             // lblResults
             // 
             this.lblResults.Location = new System.Drawing.Point(12, 49);
-            this.lblResults.Size = new System.Drawing.Size(105, 13);
+            this.lblResults.Size = new System.Drawing.Size(116, 13);
             this.lblResults.Text = "&Existing applications:";
             // 
             // lblIntro
             // 
-            this.lblIntro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblIntro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblIntro.Location = new System.Drawing.Point(12, 9);
             this.lblIntro.Name = "lblIntro";
             this.lblIntro.Size = new System.Drawing.Size(290, 27);
             this.lblIntro.TabIndex = 0;
             this.lblIntro.Text = "The application name you chose does already exist in the online database. Please " +
-                "try to use a more specific name.";
+    "try to use a more specific name.";
             // 
             // lblNewName
             // 
@@ -69,17 +69,17 @@ namespace Ketarin.Forms
             this.lblNewName.AutoSize = true;
             this.lblNewName.Location = new System.Drawing.Point(9, 245);
             this.lblNewName.Name = "lblNewName";
-            this.lblNewName.Size = new System.Drawing.Size(61, 13);
+            this.lblNewName.Size = new System.Drawing.Size(64, 13);
             this.lblNewName.TabIndex = 4;
             this.lblNewName.Text = "&New name:";
             // 
             // txtNewName
             // 
-            this.txtNewName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNewName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNewName.Location = new System.Drawing.Point(79, 242);
             this.txtNewName.Name = "txtNewName";
-            this.txtNewName.Size = new System.Drawing.Size(223, 20);
+            this.txtNewName.Size = new System.Drawing.Size(223, 22);
             this.txtNewName.TabIndex = 5;
             this.txtNewName.TextChanged += new System.EventHandler(this.txtNewName_TextChanged);
             // 
@@ -91,6 +91,7 @@ namespace Ketarin.Forms
             this.Controls.Add(this.lblIntro);
             this.Controls.Add(this.txtNewName);
             this.Controls.Add(this.lblNewName);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SimilarApplicationsDialog";
             this.Text = "Similar Applications";
             this.Controls.SetChildIndex(this.bOK, 0);
